@@ -1,0 +1,119 @@
+/* Stiluri generale pentru joc */
+.hangman-container {
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    width: 50%; /* Adăugăm o lățime maximă */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centrează orizontal */
+    position: absolute;
+    top: 50%; /* Poziționează pe axa verticală */
+    left: 50%; /* Poziționează pe axa orizontală */
+    transform: translate(-50%, -50%); /* Mărește precizia centrareii pe verticală și orizontală */
+}
+
+/* Mesajul de felicitare */
+.hangman-status p.win {
+    color: #28a745; /* Verde pentru câștig */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Cuvântul ghicit */
+.hangman-word {
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    color: #000000;
+}
+
+/* Buton restart */
+.hangman-restart {
+    margin-top: 20px;
+}
+
+.hangman-restart button {
+    padding: 15px 30px;
+    background-color: #28a745;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hangman-restart button:hover {
+    background-color: #218838;
+    transform: scale(1.1);
+}
+
+.hangman-restart button:focus {
+    outline: none;
+}
+
+/* Încercări și status */
+.hangman-status {
+    margin-top: 20px;
+}
+
+.hangman-status p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Butoane pentru litere */
+.hangman-buttons {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    width: 500px;
+    transform: translate(25%);
+}
+
+.hangman-buttons button {
+    padding: 12px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hangman-buttons button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+.hangman-buttons button:disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+/* Status joc pierdut sau câștigat */
+.hangman-status p.lose {
+    color: #dc3545; /* Roșu pentru pierdere */
+}
+
+h1 {
+    color: #21670f;
+}
+
+.hangman-image {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+    right: 25px;
+}
+
+h2 {
+    color: #1a251f;
+    font-size: 40px;
+}
