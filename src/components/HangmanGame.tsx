@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './HangmanGame.css'; // Importăm fișierul CSS
-import { words } from '../data/wordsList'; // Ajustează calea în funcție de locația fișierului
+import { words } from '../data/newWordsList'; // Ajustează calea în funcție de locația fișierului
 
 const HangmanGame: React.FC = () => {
     const [word, setWord] = useState<string>("");
